@@ -14,18 +14,14 @@ jobs:
       packages: write
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'zulu'
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'zulu'
 
-      - name: Grant execute permission to Maven Wrapper
-        run: chmod +x ./mvnw
-
-      - name: Publish package
-        run: ./mvnw deploy
-        env:
-          GITHUB_TOKEN: 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
-          GITHUB_ACTOR: JayasriChinthala
+    - name: Publish package
+      run: ./mvnw deploy
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
