@@ -20,7 +20,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
-
+        
+    - name: Set execute permission for mvnw
+      run: chmod +x ./mvnw
+        
     - name: Publish package
       run: ./mvnw deploy
       env:
