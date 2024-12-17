@@ -43,11 +43,11 @@
 		<repository>
 			<id>github</id>
 			<name>Github</name>
-			<url>https://maven.pkg.github.com/isms24-apps/common-service</url>
+			<url>https://maven.pkg.github.com/JayasriChinthala/common-service</url>
 		</repository>
 		<snapshotRepository>
 			<id>github</id>
-			<url>https://maven.pkg.github.com/isms24-apps/common-service</url>
+			<url>https://maven.pkg.github.com/JayasriChinthala/common-service</url>
 		</snapshotRepository>
 	</distributionManagement>
 
